@@ -1,1 +1,0 @@
-# glimpse-of-pakistani-culture

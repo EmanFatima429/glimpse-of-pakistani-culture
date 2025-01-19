@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="project.css"> 
+<style>
+        
+        body {
+            margin: 0; 
+            font-family: Arial;
+            background-color:lightblue; 
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+            grid-template-rows: repeat(3, 1fr); /* 3 equal rows */
+            height: 100vh; 
+            width: 100%; 
+            gap: 10px;
+            padding: 30px; 
+        }
+
+        .grid-item {
+            position: relative; /* Position relative for absolute children */
+            overflow: hidden;
+            background-color: #4CAF50; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white; 
+			border-radius: 10px;
+        }
+
+        /* Merging  boxes */
+        .grid-item-long {
+            grid-column: 2 / span 2; /* Start at the second column ,Span 2 columns*/
+            grid-row: 1 ; /* in first row */
+        }
+		 .grid-item-long2 {
+            grid-column: 1 / span 2; /* Start at the first column ,Span 2 columns */
+            grid-row: 2 ; /* in second row */
+        }
+		.grid-item-long3 {
+            grid-column: 4 ; /* in 3rd column */
+            grid-row: 1/span 3; /* span 3 rows*/
+        }
+
+        /* Image styles */
+        .grid-item img {
+            width: 100%; 
+            height: 100%; 
+			object-fit: cover;
+			 border: 5px solid #708090  ;
+			 border-radius: 10px;
+			}
+
+        /* Description styles */
+        .description {
+            position: absolute; /* Position absolute for overlay */
+            bottom: 0; /* Align to the bottom */
+            left: 0; /* Align to the left */
+            right: 0; /* Align to the right */
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            color: white;
+            padding: 10px;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s; /* Smooth transition */
+			font-family:'Amiri';
+			font-size: 13px;
+        }
+
+        /* Show description on hover */
+        .grid-item:hover .description {
+            opacity: 1; /* Show description on hover */
+        }
+
+       /* zoom in on hover */
+        .grid-item:hover img {
+            transform: scale(1.1); 
+        }
+    </style>
+</head>
+	  <!-- Transparent Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li>
+                <a href="#" class="dropdown-toggle">Cultures</a>
+                <ul class="dropdown">
+                    <li><a href="Sindhi.html">Sindhi Culture</a></li>
+                    <li><a href="Punjabi.html">Punjabi Culture</a></li>
+                    <li><a href="Punjabi.html">Balochi Culture</a></li>
+                    <li><a href="pashto.html">Pashto Culture</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+	
+<body>
+
+<div class="grid-container">
+        <div class="grid-item">
+            <img src="https://i.pinimg.com/474x/4c/d6/5d/4cd65dae21ba1613acd976dc3e6b9d36.jpg" alt="Image 1">
+            <div class="description"><em><b>HENNA</b></em><hr><br>Symbolizing joy and celebration, henna patterns are an essential part of weddings and festivals, with each design telling its own story.</div>
+        </div>
+        <div class="grid-item grid-item-long">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt7VJuaoo3X7XUNnDUcBMHCZIsBlUqhZpH3A&s" alt="Image 2" >
+            <div class="description"><em><b>AJRAK</em></b><hr><br>A cultural icon of Sindh, the Ajrak is a symbol of pride, with its deep colors and geometric patterns representing harmony and tradition.</div>
+        </div>
+        <div class="grid-item grid-item-long2">
+            <img src="https://i.pinimg.com/474x/db/2b/e0/db2be0683f97128e0d0b88fc5f30bfb4.jpg" alt="Image 3" style="transform: rotate(360deg)">
+            <div class="description" ><em><b>BIRYANI</b></em><hr><br>A fragrant blend of spices, rice, and tender meat, Biryani is the epitome of Pakistani culinary heritage, enjoyed at every celebration and family gathering.</div>
+        </div>
+        <div class="grid-item grid-item-long3">
+            <img src="https://i.pinimg.com/236x/80/78/2a/80782aab4de336c7415d738a4f4621c0.jpg" alt="Image 4">
+            <div class="description"><em><b>BADSHAHI MOSQUE</em></b><hr><br>An architectural marvel from the Mughal era, the Badshahi Mosque stands as a symbol of grandeur and religious devotion in Lahore.</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://i.pinimg.com/236x/38/a4/68/38a468f9d952cabca268b0229336f4bd.jpg" alt="Image 5">
+            <div class="description"><em><b>SUFI MUSIC</em></b><hr><br>Echoing themes of love, unity, and spirituality, Sufi music captures the soul of Pakistan’s mystical traditions through powerful melodies.</div>
+        </div>
+		 <div class="grid-item">
+            <img src="https://i.pinimg.com/736x/51/55/35/5155354ed2409cdd0fc9d16516c8c684.jpg" alt="Image 6">
+            <div class="description"><em><b>TRUCK ART</b></em><hr><br> A vibrant expression of creativity, Pakistan's truck art transforms vehicles into moving masterpieces, celebrating culture and identity."</div>
+        </div>
+		 <div class="grid-item">
+            <img src="https://i.pinimg.com/236x/46/0c/06/460c06170d9d3655b0b075cfc4607a02.jpg" alt="Image 7">
+            <div class="description"><em><b>CARPET MAKING</em></b><hr><br>A centuries-old tradition, Pakistani carpets are handwoven with intricate patterns that embody patience, skill, and cultural heritage."</div>
+        </div>
+		 <div class="grid-item">
+            <img src="https://i.pinimg.com/236x/7c/f5/00/7cf50020b4d104a254c141f098d27976.jpg" alt="Image 8">
+            <div class="description"><em><b>BANGLES</b></em><hr><br>Intricately crafted with beads and threads, these traditional accessories showcase the unmatched artistry of Pakistan's cultural craftsmanship."</div>
+        </div>
+    </div>
+    <!-- Footer -->
+<footer>
+    <p>&copy; 2025 Glimpse Into Pakistani Culture | All Rights Reserved</p>
+</footer>
+<script src="project.js"></script>
+</body>
+</html>

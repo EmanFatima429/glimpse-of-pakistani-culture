@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sindh's Culture</title>
+    <link rel="stylesheet" href="project.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+            overflow-x: hidden;
+        }
+
+        main {
+            background-image: url('https://trulypakistan.net/wp-content/uploads/2021/07/1-T3hbhJHUd2Emyd7jKR2pvg-1024x683.jpeg');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            padding: 50px 0;
+            text-align: center;
+            position: relative;
+            color: white;
+        }
+
+        /* Welcome Card Style */
+        .welcome-card {
+            background-color: rgba(231, 243, 254, 0.9);
+            color: #4a4a4a;
+            padding: 40px 30px;
+            margin: 20px auto;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 900px;
+        }
+
+        .welcome-card h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 38px;
+            color: #3e5d76;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .welcome-card p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-top: 0;
+            color: #555;
+        }
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    overflow: hidden;
+    height: 500px;  /* Ensure the height is enough for the images */
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.slides {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensure image covers the full container */
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensure the image fills the container */
+}
+
+.active-slide {
+    display: block;
+}
+
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            padding: 18px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            font-size: 22px;
+            border: none;
+            cursor: pointer;
+            border-radius: 50%;
+            z-index: 1;
+            transform: translate(0, -50%);
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .slide-number {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 5px 10px;
+            font-size: 16px;
+        }
+
+        .slide-description {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 12px 20px;
+            font-size: 18px;
+            width: 90%;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .slideshow-container {
+                width: 90%;
+            }
+
+            .slides {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .slides {
+                height: 300px;
+            }
+
+            .slide-description {
+                font-size: 16px;
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li>
+                <a href="#" class="dropdown-toggle">Cultures</a>
+                <ul class="dropdown">
+                    <li><a href="Sindhi.html">Sindhi Culture</a></li>
+                    <li><a href="Punjabi.html">Punjabi Culture</a></li>
+                    <li><a href="Balochi.html">Balochi Culture</a></li>
+                    <li><a href="pashto.html">Pashto Culture</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+<body>
+    <main>
+        <!-- Welcome Card Section -->
+        <div class="welcome-card">
+            <h1>Explore Sindh's Culture</h1>
+            <p>Sindh, known for its rich history and vibrant traditions, is home to ancient sites like Mohenjo-Daro. The province celebrates its cultural heritage through colorful attire, Sufi music, truck art, and delicious dishes like Sindhi Biryani. Sindh’s festivals and folk dances reflect the warmth and hospitality of its people</p>
+        </div>
+
+        <div class="slideshow-container">
+            <!-- Slides -->
+            <div class="slides active-slide">
+                <img src="https://i.dawn.com/large/2014/06/5395db39a063c.jpg" alt="Sindhi Biryani, a traditional dish of Sindh" loading="lazy">
+                <div class="slide-number">1 / 6</div>
+                <div class="slide-description">Sindhi Biryani is a fragrant and spicy rice dish, cooked with tender meat and a blend of aromatic spices, creating a flavorful and rich experience</div>
+            </div>
+
+            <div class="slides">
+                <img src="https://www.pakistantradeportal.gov.pk/storage/product_images/62c2b29cdb0641656926876.jpg" alt="Ajrak, a traditional Sindhi textile" loading="lazy">
+                <div class="slide-number">2 / 6</div>
+                <div class="slide-description">Ajrak, a traditional Sindhi textile, known for its unique patterns.</div>
+            </div>
+
+            <div class="slides">
+                <img src="https://www.youlinmagazine.com/articles/2448-1.jpg" alt="Sindhi folk dance, energetic and graceful" loading="lazy">
+                <div class="slide-number">3 / 6</div>
+                <div class="slide-description">Sindhi folk dance is a vibrant expression of culture, marked by energetic movements and graceful gestures that showcase the region's rich traditions</div>
+            </div>
+
+            <div class="slides">
+                <img src="https://aliamuneer95.wordpress.com/wp-content/uploads/2015/01/sindhi-cultural-dress-11.jpg" alt="The Sindhi dress" loading="lazy">
+                <div class="slide-number">4 / 6</div>
+                <div class="slide-description">The Sindhi dress, often vibrant and colorful, reflects the rich cultural heritage of the Sindh region, with intricate embroidery and traditional patterns.</div>
+            </div>
+
+            <div class="slides">
+                <img src="https://i.pinimg.com/736x/23/14/01/231401bc5621b0c40c9942dc7b8529c9.jpg" alt="Traditional Sindhi handicrafts, showcasing intricate designs" loading="lazy">
+                <div class="slide-number">5 / 6</div>
+                <div class="slide-description">Sindhi handicrafts are renowned for their intricate designs, with vibrant ajrak prints, mirror work, and embroidery that reflect the region's rich artistic traditions</div>
+            </div>
+
+            <div class="slides">
+                <img src="https://sindhikhazana.com/wp-content/uploads/2020/09/sindhi-music-3.jpg" alt="Sindhi music, a blend of traditional instruments" loading="lazy">
+                <div class="slide-number">6 / 6</div>
+                <div class="slide-description">Sindhi music is a harmonious blend of traditional instruments like the sitar, dholak, and harmonium, creating soulful rhythms and melodies</div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </main>
+    <script>
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.slides');
+        const footer = document.querySelector('footer');
+
+        function changeSlide(direction) {
+            // Hide the current slide
+            slides[currentSlideIndex].classList.remove('active-slide');
+
+            // Calculate the new slide index
+            currentSlideIndex += direction;
+            if (currentSlideIndex < 0) {
+                currentSlideIndex = slides.length - 1;
+            } else if (currentSlideIndex >= slides.length) {
+                currentSlideIndex = 0;
+            }
+
+            // Show the new slide
+            slides[currentSlideIndex].classList.add('active-slide');
+        }
+
+        // Automatically move to the next slide every 5 seconds
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+    </script>
+	    <!-- Footer -->
+<footer>
+    <p>&copy;  2025 Glimpse Into Pakistani Culture | All Rights Reserved</p>
+</footer>
+<script src="project.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 300px; /* Default height */
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.mySlides {
+    display: none;
+    animation: fade 1s ease-in-out; /* Smooth transition animation */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+/* Slideshow Container */
+
+/* Individual Slides */
+.mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+/* Fade Animation for Slides */
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+    background-image: url('https://images.ctfassets.net/vm4sgchw7ymt/7m1WdQaxTMsFkLM2Dqp3aE/ff2f214bf4c38ef7cf2d1e3db2c6b011/Pakistan_1.jpg');
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+}
+
+
+p {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+
+.highlights, .fun-facts {
+    padding: 20px;
+    background-color: white;
+    color: black;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+h3 {
+    color: black;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.highlights:hover, .fun-facts:hover {
+    transform: translateY(-5px);
+}
+
+ul li {
+    background: #e7f3fe;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-size: 1.1em;
+}
+
+    ul li:hover {
+        background: #d1e7fd;
+    }
+nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 5px 0;
+}
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0; /* Ensure no padding for the nav list */
+    }
+
+        nav ul li {
+            position: relative;
+            margin: 0 15px;
+        }
+
+            nav ul li a {
+                text-decoration: none;
+                color: black;
+                padding: 10px 15px;
+                font-size: 1em;
+                border-radius: 10px; /* Apply rounded corners to nav links */
+                transition: background-color 0.3s, color 0.3s;
+            }
+
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    padding: 0;
+    width: 150px;
+    top: 100%; /* Position the dropdown below the parent item */
+    left: 0;
+    border-radius: 10px; /* Rounded corners for dropdown container */
+}
+
+    .dropdown li {
+        width: 100%;
+        margin: 0;
+    }
+
+        .dropdown li a {
+            margin: 0;
+            padding: 10px 15px;
+            color: black;
+            display: block;
+            font-size: 0.9em;
+            font-family: 'Arial', sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+            text-align: center; /* Center the text */
+            border-radius: 10px; /* Rounded borders for dropdown links */
+        }
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+/* Hover effect for dropdown items */
+.dropdown li a:hover {
+    background-color: #e7f3fe;
+    color: #2a7d2a;
+}
+
+/* Global List Styles (Including nav and dropdowns) */
+ul li {
+    background: #e7f3fe;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners for all list items */
+    transition: background 0.3s;
+    font-size: 1.1em;
+}
+
+    ul li:hover {
+        background: #d1e7fd;
+    }
+
+/* Basic Styling */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    min-height: 100%; /* Ensures the content takes up full height */
+    padding-bottom: 60px; /* Add space for the footer */
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(231, 243, 254, 0.9);
+    color: black;
+    transition: bottom 0.3s ease-in-out;
+    z-index: 1000;
+    display: block;
+    visibility: visible;
+    padding: 15px 0;
+    bottom: 0;
+}
+
+
+
+    footer.show {
+        bottom: 0; /* Footer appears at the bottom when visible */
+    }
+
+    footer p {
+		color:black;
+        margin: 0;
+    }
+
+.slideshow-container {
+    position: relative; /* Ensure this is set */
+    max-width: 100%;
+    overflow: hidden;
+    height: 300px; /* Adjust as needed */
+}
+
+.slideshow-container {
+    z-index: 10; /* Ensure it's above other elements */
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height: 300px; /* Ensure height is set */
+    overflow: hidden;
+    margin: auto;
+}
+
+.mySlides {
+    display: none; /* Default to hidden */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
